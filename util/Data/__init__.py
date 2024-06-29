@@ -172,7 +172,7 @@ class Data:
         data: 数据
         key: 硬件ID
         """
-        mid = "b'a1234567-1234-1234'"
+        mid = "b'a1234567-1234-1234'"       #简单固定了用于加密的 AES 密钥
         key = mid.encode()[:16]
         cipher = AES.new(key, AES.MODE_ECB)
         cipher_text = cipher.encrypt(pad(data.encode(), AES.block_size))
@@ -186,7 +186,7 @@ class Data:
         data: 数据
         key: 硬件ID
         """
-        mid = "b'a1234567-1234-1234'"
+        mid = "b'a1234567-1234-1234'"       #简单固定了用于加密的 AES 密钥
         key = mid.encode()[:16]
         cipher = AES.new(key, AES.MODE_ECB)
         cipher_text = base64.b64decode(data.encode("utf-8"))
