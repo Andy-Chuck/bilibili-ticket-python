@@ -76,3 +76,5 @@ pyinstaller --clean --noconfirm --log-level WARN cli.spec
 - [Just-Prog/Bilibili_show_ticket_auto_order](https://github.com/Just-Prog/Bilibili_show_ticket_auto_order)
 - [biliticket/BHYG](https://github.com/biliticket/BHYG)
 - [mikumifa/biliTickerBuy](https://github.com/mikumifa/biliTickerBuy)
+
+（本 Fork 版本固定了用于用户配置加密的 AES 密钥，增加了 Poetry 的 Tuna 下载源，以便分布式快速部署）
